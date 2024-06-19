@@ -32,12 +32,10 @@ def draw_line(x,y,x1,y1,dx,dy,sx,sy):
     scaled_y1=y1*sy
 
     pygame.draw.line(screen,green, (x,y),(scaled_x1,scaled_y1) ,1)
-    # pygame.draw.line(screen,violet, (scaled_x,scaled_y),(scaled_x1,scaled_y1) ,1)
+    pygame.draw.line(screen,violet, (scaled_x,scaled_y),(scaled_x1,scaled_y1) ,1)
 
     angle=30
-        # x2=x*math.cos(math.radians(angle))
-        # y2=y*math.cos(math.radians(angle))
-        # pygame.draw.line(screen,violet, (x,y),(x2,y2) ,1)
+
     rad_angle = math.radians(angle)
     rotated_x = x * math.cos(rad_angle) - y * math.sin(rad_angle)
     rotated_y = x * math.sin(rad_angle) + y * math.cos(rad_angle)
