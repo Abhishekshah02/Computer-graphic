@@ -29,7 +29,7 @@ def draw_line_dda(x1,y1,x2,y2):
                 x=x+ls
                 p=p+2*dy
             else:
-                p=p+2*dx-2*dy
+                p=p+2*dy-2*dx
                 x=x+ls
                 y=y+ly
             screen.set_at((x,y),"black")
